@@ -1,0 +1,21 @@
+spring:
+   datasource: 
+      name: mxd_jsj_jyq
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/mxd_jsj_jyq?useUnicode=true&serverTimezone=Asia/Shanghai&characterEncoding=utf8&autoReconnect=true&useSSL=false&allowMultiQueries=true
+      username:  
+      password:  
+      hikari:
+         minimum-idle: 5
+         maximum-pool-size: 15
+         auto-commit: true
+         idle-timeout: 30000
+         pool-name: hikariCP
+         max-lifetime: 30000
+         connection-timeout: 30000
+         connection-test-query: SELECT 1
+server:
+   port: 16566
+   
+mybatis:
+   mapper-locations: classpath:mapper/*Mapper.xml
