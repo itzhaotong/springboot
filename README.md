@@ -12,4 +12,4 @@
 
 ![Image text]( )
 
-技术选型 : springboot + mybatis + mysql + angularjs + semantic-ui 
+技术选型 : springboot + mybatis + mysql + angularjs + semantic-ui   
