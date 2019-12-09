@@ -5,13 +5,14 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 import zylsm.pojo.MxdPicture;
+import zylsm.vo.MxdPictureVo;
 
 public interface MxdPictureMapper {
 
 	Integer getTotal();
 
-	void insert(MxdPicture mp);
+	void save(MxdPicture mp);
 
-	List<MxdPicture> getList(@Param("pages")Integer pages,@Param("pageSize")Integer pageSize);
+	List<MxdPictureVo> getList(@Param("pages")Integer pages, @Param("pageSize")Integer pageSize);
 
 }

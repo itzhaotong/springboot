@@ -5,8 +5,8 @@ app.controller('initController',function($scope,$window,MxdPictureService){
 	$scope.init = function(){
 		MxdPictureService.getList($scope.page).success(
 				function(response){
-					$scope.Date = response.data
-					$scope.totalPage = response.totalPage
+					$scope.Date = response.data.data
+					$scope.totalPage = response.data.totalPage
 				}
 		)
 	}
@@ -14,8 +14,8 @@ app.controller('initController',function($scope,$window,MxdPictureService){
 	$scope.getList = function(page){
 		MxdPictureService.getList(page).success(
 				function(response){
-					$scope.Date = response.data
-					$scope.totalPage = response.totalPage
+					$scope.Date = response.data.data
+					$scope.totalPage = response.data.totalPage
 				}
 		)
 	}

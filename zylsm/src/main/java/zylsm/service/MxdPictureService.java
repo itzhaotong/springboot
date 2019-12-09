@@ -1,12 +1,11 @@
 package zylsm.service;
 
-import java.util.Map;
-
 import zylsm.pojo.MxdPicture;
+import zylsm.respone.QueryResult;
 
 public interface MxdPictureService {
 
-	Map<String, Object> getList(Integer page);
+	QueryResult getList(Integer page);
 
 	void insert(MxdPicture mp);
 
