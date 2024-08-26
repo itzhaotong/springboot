@@ -60,7 +60,7 @@
       <dependency>
           <groupId>io.springfox</groupId>
           <artifactId>springfox-swagger-ui</artifactId>
-          <version>2.9.2</version>
+          <version>2.10.0</version>
       </dependency>
 
       <!--防止进入swagger页面报类型转换错误，排除2.9.2中的引用，手动增加1.5.21版本-->
